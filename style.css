@@ -1,0 +1,50 @@
+#presentacion {
+    height: 88vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+body{
+    background-color:rgb(255, 254, 230);
+}
+
+#botones-texto1{
+    color: rgb(126, 71, 7);
+}
+
+#Kira-texto{
+    color: rgb(181, 102, 12);
+}
+
+#Kira1{
+    color: rgb(146, 84, 13);
+}
+
+#texto{
+    color: rgb(84, 51, 12);  
+    text-align: justify;
+}
+
+.proyecto{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#proyecto-1 {
+    background-image: url('shizu1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#proyecto-2{
+    background-image: url('google.png');
+}
+
+
+.text-shadow-1{
+    text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .55);
+    
+}
