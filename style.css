@@ -26,6 +26,11 @@ body{
     text-align: justify;
 }
 
+#app{
+    color: rgb(84, 51, 12);  
+    text-align: justify;
+}
+
 .proyecto{
     background-repeat: no-repeat;
     background-position: center;
