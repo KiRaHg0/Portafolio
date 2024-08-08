@@ -31,7 +31,7 @@ const mainElement = document.querySelector('main'); // seleccionar la etiqueta m
 
 mainElement.addEventListener('click', function () {
     if (!audioElement) {
-        audioElement = new Audio('assets/music/we.mp3');
+        audioElement = new Audio('assets/music/we2.mp3');
         audioElement.volume = 0.1
     }
     audioElement.play();
