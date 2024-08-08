@@ -51,19 +51,21 @@
 
 
   <main class="pb-5 mb-3">
-    <section id="presentación">
+    <section style="background-image: url('assets/fondo.jpg')" id="presentación">
       <div class="container col-xxl-8 px-4 py-5">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div style="background-color: rgb(255, 254, 230);"
+          class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
           <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
             <h1 id="app" class="display-4 fw-bold lh-1">Yakira González</h1>
-            <p id="texto" class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-              world’s most
-              popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-              extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <p id="texto" class="lead">Soy una estudiante en Ingeniería en Biotecnología que desea graduarse como una
+              "Todóloga".</p>
+            <p id="texto" class="lead">A pesar de no tener la trayectoría que desearía, de manera laboral, en mi vida y
+              en conocimientos, deseo empezar poco a poco. </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
               <button id="botones-texto1" type="button"
-                class="btn btn-warning btn-lg px-4 me-md-2 fw-bold">Primary</button>
-              <button type="button" class="btn btn btn-outline-warning btn-lg px-4">Default</button>
+                class="btn btn-warning btn-lg px-4 me-md-2 fw-bold">Contáctame</button>
+              <button type="button" class="btn btn btn-outline-warning btn-lg px-4"
+                onclick="copiarAlPortapapeles('gonzalezyakira1@gmail.com')">gonzalezyakira1@gmail.com</button>
             </div>
           </div>
           <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
@@ -75,79 +77,77 @@
 
 
     <section id="habilidades" class="container px-4 py-5" id="featured-3">
+
       <h2 class="pb-2 border-bottom">Habilidades</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
         <div class="feature col">
           <div
             class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-warning text-warning-emphasis fs-2 px-3 py-2 rounded mx-2">
-            <i class="bi bi-umbrella"></i>
+            <i class="bi bi-fast-forward"></i>
           </div>
-          <h3 class="fs-2 text-body-emphasis">Habilidad1</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-            probably just keep going until we run out of words.</p>
+          <h3 class="fs-2 text-body-emphasis py-2">Rápido aprendizaje</h3>
+          <p>Capacidad para hacer mías las competencias que me presentan.</p>
         </div>
         <div class="feature col">
           <div
             class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-warning text-warning-emphasis fs-2 px-3 py-2 rounded mx-2">
-            <i class="bi bi-umbrella"></i>
+            <i class="bi bi-brush"></i>
           </div>
-          <h3 class="fs-2 text-body-emphasis">Habilidad2</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-            probably just keep going until we run out of words.</p>
+          <h3 class="fs-2 text-body-emphasis py-2">Detallista</h3>
+          <p>Será fácil notar patrones, errores y soluciones.</p>
         </div>
         <div class="feature col">
           <div
             class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-warning text-warning-emphasis fs-2 px-3 py-2 rounded mx-2">
-            <i class="bi bi-umbrella"></i>
+            <i class="bi bi-code"></i>
           </div>
-          <h3 class="fs-2 text-body-emphasis">Habilidad3</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-            probably just keep going until we run out of words.</p>
+          <h3 class="fs-2 text-body-emphasis py-2">Astuta</h3>
+          <p>Novata y emocionada por el HTML, CSS Y JS.</p>
         </div>
       </div>
     </section>
 
 
-    <section id="proyectos" class="container px-4 py-5" id="custom-cards">
+    <section id="proyectos" class="container px-4" id="custom-cards">
       <h2 class="pb-2 border-bottom">Proyectos</h2>
 
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
         <div class="col">
           <div id="proyecto-2" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('assets/shizu1.jpg');">
+            style="background-image: url('assets/fondokira.jpeg');">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Shizu</h3>
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Kirabytes</h3>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="mx-auto">
-
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                  <img src="assets/tclogo.png" alt="Technolochicas" width="32" height="32"
                     class="rounded-circle border border-white">
                 </li>
                 <li class="d-flex align-items-center me-3">
-                  <a class="link-light" href="" target="_blank">LINK</a>
+                  <a class="link-light" href="https://mi-primera-p-gina-rho.vercel.app/" target="_blank">LINK</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+
         <div class="col">
           <div id="proyecto-2" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('assets/shizu1.jpg');">
+            style="background-image: url('assets/clongoogle.png');">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Shizu</h3>
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon Google</h3>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="mx-auto">
-
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                    class="rounded-circle border border-white">
+                  <img src="assets/tclogo.png" alt="Technolochicas" width="32" height="32"
+                  class="rounded-circle border border-white">
                 </li>
                 <li class="d-flex align-items-center me-3">
-                  <a class="link-light" href="" target="_blank">LINK</a>
+                  <a class="link-light" href="https://clon-google-gilt.vercel.app/" target="_blank">LINK</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+
         <div class="col">
           <div id="proyecto-3" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="background-image: url('assets/shizu1.jpg');">
@@ -155,8 +155,7 @@
               <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Shizu</h3>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="mx-auto">
-
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                  <img src="assets/tclogo.png" alt="Technolochicas" width="32" height="32"
                     class="rounded-circle border border-white">
                 </li>
                 <li class="d-flex align-items-center me-3">
@@ -239,8 +238,7 @@
 
         </li>
         <li class="nav-item">
-          <a href=" " target="_blank"
-            class="nav-link px-2 text-body-secondary">
+          <a href=" " target="_blank" class="nav-link px-2 text-body-secondary">
             <i class="bi bi-envelope fs-3 text-warning-emphasis"></i>
           </a>
 

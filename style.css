@@ -3,6 +3,11 @@
     display: flex;
     justify-content: start;
     align-items: center;
+
+    background-image: url("assets/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 body{
@@ -31,21 +36,31 @@ body{
     text-align: justify;
 }
 
-.proyecto{
+.proyecto {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 #proyecto-1 {
-    background-image: url('shizu1.jpg');
+    background-image: url('assets/fondokira.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 #proyecto-2{
-    background-image: url('google.png');
+    background-image: url('assets/clongoogle.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#proyecto-3{
+    background-image: url('shizu1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 

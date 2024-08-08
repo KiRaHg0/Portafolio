@@ -9,11 +9,18 @@ let typewriter = new Typewriter(app, {
 // a veces tiene el operador punto
 typewriter
     .pauseFor(2500) //milisegundos = 2.5 seg
+    .typeString('Me presento')
+    .pauseFor(300)
+    .deleteAll()
     .typeString('Yakira González')
     .pauseFor(300)
     .deleteAll()
     .typeString('Desarrolladora FRONTEND JR')
+    .pauseFor(300)
+    .deleteAll()
+    .typeString('¡Mucho gusto!')
     .pauseFor(1000)
+    .deleteAll()
     .start();
 
 
@@ -41,3 +48,12 @@ pauseButton.addEventListener('click', function () {
         pauseButton.textContent = "Reanudar";
     }
 })
+
+async function copiarAlPortapapeles(texto) {
+    try {
+      await navigator.clipboard.writeText(texto);
+      alert('¿Texto copiado al portapapeles!');
+    } catch (err) {
+      console.error('Error al copiar:', err);
+    }
+  }
