@@ -9,6 +9,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
 
@@ -29,16 +33,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a id="Kira-texto" class="nav-link" aria-current="page" href="#">Habilidades</a>
+              <a id="Kira-texto" class="nav-link" aria-current="page" href="#habilidades">Habilidades</a>
             </li>
             <li class="nav-item">
-              <a id="Kira-texto" class="nav-link" href="#">Proyectos</a>
+              <a id="Kira-texto" class="nav-link" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a id="Kira-texto" class="nav-link" href="#">Testimonios</a>
+              <a id="Kira-texto" class="nav-link" href="#testimonios">Testimonios</a>
             </li>
             <li class="nav-item">
-              <a id="Kira-texto" class="nav-link" href="#">Contacto</a>
+              <a id="Kira-texto" class="nav-link" href="#contacto">Contacto</a>
             </li>
             <li class="nav-item">
               <button id="pauseButton">Pausar</button>
@@ -56,7 +60,7 @@
         <div style="background-color: rgb(255, 254, 230);"
           class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
           <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <h1 id="app" class="display-4 fw-bold lh-1">Yakira González</h1>
+            <h1 id="app" class="dm-sans display-4 fw-bold lh-1">Yakira González</h1>
             <p id="texto" class="lead">Soy una estudiante en Ingeniería en Biotecnología que desea graduarse como una
               "Todóloga".</p>
             <p id="texto" class="lead">A pesar de no tener la trayectoría que desearía, de manera laboral, en mi vida y
@@ -86,7 +90,7 @@
             <i class="bi bi-fast-forward"></i>
           </div>
           <h3 class="fs-2 text-body-emphasis py-2">Rápido aprendizaje</h3>
-          <p>Capacidad para hacer mías las competencias que me presentan.</p>
+          <p>Capacidad para hacer mías las competencias que se me presentan.</p>
         </div>
         <div class="feature col">
           <div
@@ -131,6 +135,24 @@
         </div>
 
         <div class="col">
+          <div id="proyecto-3" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('assets/fondo.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Portafolio</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="mx-auto">
+                  <img src="assets/tclogo.png" alt="Technolochicas" width="32" height="32"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <a class="link-light" href="https://portafolio-xi-wheat.vercel.app/" target="_blank">LINK</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
           <div id="proyecto-2" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="background-image: url('assets/clongoogle.png');">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -148,23 +170,6 @@
           </div>
         </div>
 
-        <div class="col">
-          <div id="proyecto-3" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('assets/shizu1.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Shizu</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="mx-auto">
-                  <img src="assets/tclogo.png" alt="Technolochicas" width="32" height="32"
-                    class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <a class="link-light" href="" target="_blank">LINK</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -238,8 +243,8 @@
 
         </li>
         <li class="nav-item">
-          <a href=" " target="_blank" class="nav-link px-2 text-body-secondary">
-            <i class="bi bi-envelope fs-3 text-warning-emphasis"></i>
+            <i class="bi bi-envelope fs-3 px-2 nav-link text-warning-emphasis" type="button" class="btn btn btn-outline-warning btn-lg px-4"
+            onclick="copiarAlPortapapeles('gonzalezyakira1@gmail.com')"></i>
           </a>
 
         </li>

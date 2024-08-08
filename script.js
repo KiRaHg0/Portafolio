@@ -52,7 +52,7 @@ pauseButton.addEventListener('click', function () {
 async function copiarAlPortapapeles(texto) {
     try {
       await navigator.clipboard.writeText(texto);
-      alert('¿Texto copiado al portapapeles!');
+      alert('¡Texto copiado al portapapeles!');
     } catch (err) {
       console.error('Error al copiar:', err);
     }
